@@ -1,0 +1,35 @@
+.container__gallery {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+.container__gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.container__gallery {
+    -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+}
+
+.gallery__box {
+    display: block;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin-right: 0;
+    width: auto;
+    height: 33.3%;
+}
+
+.gallery__box__image{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover;
+     vertical-align: bottom*/
+}
+
+.gallery__box .gallery__box__icon {
+margin-right: 0.75rem;
+}
