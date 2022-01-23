@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Outlet, Link } from "react-router-dom";
 import Header from "./components/Header"
+import MapAndIcons from "./components/MapAndIcons"
 import './App.css';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import BakeryDiningIcon from '@mui/icons-material/BakeryDining';
@@ -16,7 +17,7 @@ const App = () => {
             <Header/>
             <div className="mainMenu">
               <nav className="mainMenu__line">
-                <Link to="/Places"><MenuButt/></Link> | {" "}
+                <Link to="/Places" className="mainMenu__line__home"><MenuButt /></Link> | {" "}
                 <Link to="/Places/coffee"><FreeBreakfastIcon sx={{fontSize: 40}} style={{fill: "black"}}/></Link>   |  {" "}
                 <Link to="/Places/breakfast"><BakeryDiningIcon sx={{fontSize: 50}} style={{fill: "black"}}/></Link>  |  {" "}
                 <Link to="/Places/food"><DinnerDiningIcon sx={{fontSize: 40}} style={{fill: "black"}}/></Link>

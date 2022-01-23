@@ -34,8 +34,8 @@ export default function MenuButt() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Home</MenuItem>
-        <MenuItem onClick={handleClose}>About Me</MenuItem>
+        <MenuItem onClick={handleClose} >Home</MenuItem>
+        <MenuItem onClick={handleClose} >About Me</MenuItem>
       </Menu>
     </div>
   );

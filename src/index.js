@@ -10,6 +10,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Places from "./components/Places";
+import PlaceDetail from "./components/PlaceDetail";
 
 
 const rootElement = document.getElementById("root");
@@ -17,6 +18,7 @@ render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App/>}>
+                <Route path="Detail/:placeId" element={<PlaceDetail />} />
                 <Route path="Places" element={<Places/>}>
                     <Route path=":placeType" element={<Places/>}/>
                 </Route>

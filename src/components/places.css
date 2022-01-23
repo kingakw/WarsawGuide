@@ -29,6 +29,12 @@
     width: 100%;
    }
 
-.gallery__box .gallery__box__icon {
-margin-right: 0.75rem;
+.gallery__box__text .MuiImageListItemBar-title {
+    font-family: Oxygen;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.gallery__box__text .MuiImageListItemBar-subtitle {
+    font-family: Oxygen;
+    font-size: 0.73rem;
 }
