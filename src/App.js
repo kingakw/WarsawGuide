@@ -1,35 +1,47 @@
-import React, {useState} from 'react';
-import { Outlet, Link } from "react-router-dom";
+import React from 'react';
+import {Outlet, Link} from "react-router-dom";
 import Header from "./components/Header"
-import MapAndIcons from "./components/MapAndIcons"
-import './App.css';
+import Icons from "./components/Icons"
+import MenuButt from "./components/MenuButt";
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import BakeryDiningIcon from '@mui/icons-material/BakeryDining';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
-import MenuButt from "./components/MenuButt";
-
+import './App.css';
 
 const App = () => {
   return (
-      <div>
+
         <div className="mainContainer">
-          <div className="mapContainer">
-            <Header/>
-            <div className="mainMenu">
-              <nav className="mainMenu__line">
-                <Link to="/Places" className="mainMenu__line__home"><MenuButt /></Link> | {" "}
-                <Link to="/Places/coffee"><FreeBreakfastIcon sx={{fontSize: 40}} style={{fill: "black"}}/></Link>   |  {" "}
-                <Link to="/Places/breakfast"><BakeryDiningIcon sx={{fontSize: 50}} style={{fill: "black"}}/></Link>  |  {" "}
-                <Link to="/Places/food"><DinnerDiningIcon sx={{fontSize: 40}} style={{fill: "black"}}/></Link>
-              </nav>
+
+          <div className="mapContainer map">
+            <Icons/>
+
+            <div className="menuContainer">
+              <Header/>
+
+                <nav className="mainMenu">
+                  <Link to="/Places" className="mainMenu__home">
+                    <MenuButt/>
+                  </Link> | {" "}
+                  <Link to="/Places/coffee">
+                    <FreeBreakfastIcon sx={{fontSize: 40}} style={{fill: "black"}}/>
+                  </Link> | {" "}
+                  <Link to="/Places/breakfast"
+                  ><BakeryDiningIcon sx={{fontSize: 50}} style={{fill: "black"}}/>
+                  </Link> | {" "}
+                  <Link to="/Places/food">
+                    <DinnerDiningIcon sx={{fontSize: 40}} style={{fill: "black"}}/>
+                  </Link>
+                </nav>
+
+              </div>
+
             </div>
-          </div>
-          <div className="places__infoContainer"><Outlet/></div>
+          <div className="places__container"><Outlet/></div>
         </div>
-      </div>
+
   );
 }
-
 
 export default App;
 

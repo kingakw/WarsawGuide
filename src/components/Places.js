@@ -1,15 +1,12 @@
 import React from 'react';
-import {Link, NavLink, useParams} from "react-router-dom";
+import { NavLink, useParams} from "react-router-dom";
 import {getPlaces} from "./data";
 import './places.css'
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
-import Tooltip from '@mui/material/Tooltip';
 
 
-export default function Places() {
+const Places = () =>  {
     let places = getPlaces();
     let {placeType} = useParams();
 
@@ -38,3 +35,5 @@ export default function Places() {
         </div>
     );
 }
+
+export default Places;

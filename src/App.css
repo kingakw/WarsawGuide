@@ -1,6 +1,4 @@
 /*
-$white: #fff !default;
-$black: #000 !default;
 $transparent: rgba(0, 0, 0, 0) !default;
 $shadow: 0 2px 2px lighten($black, 10%);
 */
@@ -18,61 +16,55 @@ body
     right: 0;
     top: 0;
     position: fixed;
-    min-width: 1024px;
     width: 100%;
-    height: 100%;
+    max-height: 100vh ;
     border: 1px solid red;
     display: flex;
     flex-direction: row;
 }
-.mapContainer {
-    border: 1px solid red;
+
+/*.mapContainer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
     width: 75%;
-    height: auto;
-    background-image: url("http://localhost:3000/image/MAPA.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 3rem;
+    border: 1px solid red;
+}*/
+
+.menuContainer {
     display: flex;
     justify-content: space-between;
-    position: relative;
-}
-
-.places__infoContainer {
-    border: 1px solid blue;
-    background-color: #1a1a1a;
-    width: 25%;
-    vertical-align: top;
 }
 
 .mainHeader {
     font-family: Amatic SC;
     font-weight: bold;
-    font-size: 4rem;
-    padding-left: 4rem;
+    font-size: 3.5rem;
+    padding-left: 3rem;
 }
 
 .mainMenu {
-    box-sizing: border-box ;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    font-size: 3rem;
-    color: #000;
-    fill:black;
-}
-.mainMenu link a:visited{
-    color: yellow;
-}
-
-.mainMenu__line {
     padding-right: 3rem;
-    padding-top: 1rem;
-    font-size: 3rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
     color: #000;
-    fill:black;
     display: flex;
     align-items: center;
-    gap: 0.5rem
+    gap: 0.5rem;
+}
+
+.mainMenu__home {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.places__container {
+    border: 1px solid blue;
+    background-color: #1a1a1a;
+    min-width: 256px;
+    width: 25%;
+    vertical-align: top;
 }
 
 .container__gallery__text{
@@ -84,25 +76,5 @@ body
     color: white;
 }
 
-.mainMenu__line__home {
-    text-decoration: none;
-}
-
-
-
-
-/*.App {
-  text-align: center;
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}*/
 
 

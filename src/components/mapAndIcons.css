@@ -1,21 +1,31 @@
-
-/*
-.mapAndIconContainer {
-    bottom: 0;
+.map {
     left: 0;
-    right: 0;
     top: 0;
-    z-index: -1;
-    border: 1px solid red;
-    width: 75%;
-    height: auto;
     background-image: url("http://localhost:3000/image/MAPA.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 3rem;
+    background-size: cover;
+    min-width: 75%;
+    height: auto;
+    overflow: auto;
+    border: 1px solid red;
+   /* position: relative;*/
+    z-index: -1;
 }
-.iconsGrid{
+
+.icons {
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: relative;
+}
+
+/*
+.icon {
+    z-index: -1;
     position: absolute;
+    border: 1px solid green;
 }
 */
+
+
 

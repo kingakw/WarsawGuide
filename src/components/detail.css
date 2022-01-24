@@ -4,13 +4,16 @@
     width: auto;
     height: 100%;
 }
+
 .detail__info{
     background-color: whitesmoke;
-    padding-bottom: 2rem;
-    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
 }
 
 .detail__info__image{
+    border-radius: 8px 8px 0 0;
     height: 100%;
     width: 100%;
 }
@@ -20,7 +23,7 @@
     padding: 0.5rem 0.5rem 0 0.5rem;
     margin-right: 0;
     width: auto;
-    height: 33.3%;
+    height: 30%;
 }
 .detail__info__text Link {
 color: black;
