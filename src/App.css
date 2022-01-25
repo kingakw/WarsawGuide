@@ -6,7 +6,7 @@ $shadow: 0 2px 2px lighten($black, 10%);
 body
 {  margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Oxygen, sans-serif;
 }
 
@@ -16,23 +16,18 @@ body
     right: 0;
     top: 0;
     position: fixed;
+    min-width: 100vh;
     width: 100%;
-    max-height: 100vh ;
+    height: 100%;
     border: 1px solid red;
     display: flex;
     flex-direction: row;
 }
-
-/*.mapContainer {
-    bottom: 0;
-    left: 0;
-    right: 0;
+.headerWrapper{
+    position: absolute;
     top: 0;
-    width: 75%;
-    border: 1px solid red;
-}*/
-
-.menuContainer {
+    left: 0;
+    z-index: 42;
     display: flex;
     justify-content: space-between;
 }
@@ -41,40 +36,50 @@ body
     font-family: Amatic SC;
     font-weight: bold;
     font-size: 3.5rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
-.mainMenu {
+.headerMenu {
     padding-right: 3rem;
     padding-top: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    padding-left: 5rem;
+    z-index: 42;
 }
 
-.mainMenu__home {
+.headerMenu__home {
+    font-family: Amatic SC;
     text-decoration: none;
     font-weight: bolder;
+    font-size: 2rem;
+    color: black;
 }
 
-.places__container {
+.mapWrapper {
+    width: 75%;
+    min-height: 100vh;
+    overflow: scroll;
+}
+.mapContainer {
+    border: 1px solid red;
+    background-image: url("http://localhost:3000/image/MAPA.jpg");
+    background-repeat: no-repeat;
+    font-size: 3rem;
+    position: relative;
+    background-size: 100%;
+    width: 2000px;
+    height: 1600px;
+}
+
+
+.placesContainer {
     border: 1px solid blue;
     background-color: #1a1a1a;
     min-width: 256px;
     width: 25%;
     vertical-align: top;
 }
-
-.container__gallery__text{
-    margin: 0;
-    padding-left: 0.5rem;
-    font-size: 2rem;
-    font-family: Amatic SC;
-    font-weight: bold;
-    color: white;
-}
-
-
-

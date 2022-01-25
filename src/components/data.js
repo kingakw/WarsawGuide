@@ -1,7 +1,20 @@
 let places = [
     {
-        name: "Karma Coffee",
+        name: "Forum",
         id: 1,
+        type: "coffee",
+        shortDescription: "lorem",
+        direction: "lorem",
+        image: "/image/coffee/forum.jpg",
+        description: "lorem",
+        facebook: "",
+        loc_right: "30%",
+        loc_top: "24%",
+    },
+
+    {
+        name: "Karma Coffee",
+        id: 2,
         type: "coffee",
         shortDescription: `Kawa i śniadanie w najbardziej urokliwym miejscu: na Placu Zbawiciela`,
         direction: "Mokotowska 17",
@@ -18,7 +31,7 @@ let places = [
     },
     {
         name: "Wrzenie Świata",
-        id: 2,
+        id: 3,
         type: "coffee",
         shortDescription: "lorem",
         direction: "lorem",
@@ -30,7 +43,7 @@ let places = [
     },
     {
         name: "Stor",
-        id: 3,
+        id: 4,
         type: "coffee",
         shortDescription: "lorem",
         direction: "Tamka 33",
@@ -39,18 +52,6 @@ let places = [
         facebook: "",
         loc_right: "63%",
         loc_top: "35%",
-    },
-    {
-        name: "Forum",
-        id: 4,
-        type: "coffee",
-        shortDescription: "lorem",
-        direction: "lorem",
-        image: "/image/coffee/forum.jpg",
-        description: "lorem",
-        facebook: "",
-        loc_right: "30%",
-        loc_top: "24%",
     },
     {
         name: "Coffeedesk",
@@ -82,9 +83,11 @@ let places = [
         type: "breakfast",
         shortDescription: "lorem",
         direction: "Krakowskie Przedmieście 42/44",
-        image: "/image/breakfast/Cafe bristol.jpg",
+        image: "/image/breakfast/cafeBristol.jpg",
         description: "lorem",
         facebook: "https://www.cafebristol.pl/",
+        loc_right: "0%",
+        loc_top: "0%",
     },
     {
         name: "Cream",
@@ -95,6 +98,9 @@ let places = [
         image: "/image/breakfast/cream.jpg",
         description: "lorem",
         facebook: "https://www.facebook.com/kremwarszawa/",
+        loc_right: "0%",
+        loc_top: "0%",
+
     },
     {
         name: "Niezłe ziółko",
@@ -105,6 +111,8 @@ let places = [
         image: "/image/breakfast/ziolko.jpg",
         description: "lorem",
         facebook: "https://www.facebook.com/niezleziolko.warszawa/",
+        loc_right: "0%",
+        loc_top: "0%",
     },
     {
         name: "Charlotte",
@@ -115,6 +123,8 @@ let places = [
         image: "/image/breakfast/charlotte.png",
         description: "lorem",
         facebook: "https://www.facebook.com/charlottezbawiciela/",
+        loc_right: "0%",
+        loc_top: "0%",
     },
     {
         name: "Menora. Charlotte",
@@ -125,6 +135,8 @@ let places = [
         image: "/image/breakfast/charlotte_mennora.jpg",
         description: "lorem",
         facebook: "https://www.facebook.com/charlottemenora/",
+        loc_right: "0%",
+        loc_top: "0%",
     },
     {
         name: "Vincent Cafe & Bakery",
@@ -135,6 +147,8 @@ let places = [
         image: "/image/breakfast/vincent.jpg",
         description: "lorem",
         facebook: "",
+        loc_right: "0%",
+        loc_top: "0%",
     },
     {
         name: "Karma Coffee",
@@ -158,13 +172,25 @@ let places = [
         id: 14,
         type: "food",
         shortDescription: "lorem",
-        direction: "Nowy Świat 64",
-        image: "/image/breakfast/vincent.jpg",
+        direction: "Mokotowska 48",
+        image: "/image/food/alewino.jpg",
         description: "lorem",
-        facebook: "",
+        facebook: "http://alewino.pl/en",
+        loc_right: "0%",
+        loc_top: "0%",
     },
-
-
+    {
+        name: "Bibenda",
+        id: 16,
+        type: "food",
+        shortDescription: "lorem",
+        direction: "Nowogrodzka 10",
+        image: "/image/food/bibenda_.jpg",
+        description: "lorem",
+        facebook: "https://www.facebook.com/bibendanowogrodzka10/",
+        loc_right: "0%",
+        loc_top: "0%",
+    },
 ];
 
 export function getPlaces() {

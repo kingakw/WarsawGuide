@@ -15,6 +15,15 @@
      scrollbar-width: none;  /* Firefox */
 }
 
+.container__gallery__text{
+    margin: 0;
+    padding-left: 0.5rem;
+    font-size: 2rem;
+    font-family: Amatic SC;
+    font-weight: bold;
+    color: white;
+}
+
 .gallery__box {
     display: block;
     padding: 0.5rem 0.5rem 0 0.5rem;
@@ -27,6 +36,7 @@
 .gallery__box__image{
     height: 100%;
     width: 100%;
+    border-radius: 8px;
    }
 
 .gallery__box__text .MuiImageListItemBar-title {

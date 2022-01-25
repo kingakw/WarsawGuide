@@ -1,23 +1,25 @@
-import React, {StrictMode} from "react";
-//import ReactDOM from 'react-dom';
+import React from "react";
 import { render } from "react-dom";
 import {
     BrowserRouter,
     Routes,
-    Route
+    Route, Navigate
 } from "react-router-dom";
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Places from "./components/Places";
 import PlaceDetail from "./components/PlaceDetail";
+import App from './App';
+
 
 
 const rootElement = document.getElementById("root");
 render(
     <BrowserRouter>
         <Routes>
+
+            <Route path="/" element={<Navigate replace to="/Places" />} />
             <Route path="/" element={<App/>}>
+
                 <Route path="Detail/:placeId" element={<PlaceDetail />} />
                 <Route path="Places" element={<Places/>}>
                     <Route path=":placeType" element={<Places/>}/>

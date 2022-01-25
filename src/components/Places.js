@@ -10,18 +10,21 @@ const Places = () =>  {
     let places = getPlaces();
     let {placeType} = useParams();
 
+    if (placeType  !== undefined) {
+        places = places.filter(({type}) => (type === placeType))
+    }
+
     return (
         <div className="container__gallery">
             <p className="container__gallery__text"> {placeType} places: </p>
             {places
-                .filter(({type}) => (type === placeType))
                 .map(({image, name, shortDescription, id}) => (
                     <NavLink to={`/Detail/${id}`} key={id} >
                     <ImageListItem className="gallery__box" key={id}>
                         <img className="gallery__box__image"
                             src={`${image}?w=248&fit=crop&auto=format`}
                             srcSet={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                            alt={`${name} photo`}
+                            alt={`${name}`}
                             loading="lazy"
                         />
                         <ImageListItemBar className="gallery__box__text"
@@ -37,3 +40,5 @@ const Places = () =>  {
 }
 
 export default Places;
+
+
