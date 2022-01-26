@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oxygen:wght@300&display=swap');
+
+$small-screen: 768px;
+$xsmall-screen: 480px;
+$white: #fff;
+$black: #000;
+$background: #1a1a1a;
+$background-white: whitesmoke;
+$red: #af1d1d;
+
+$font-header: 'Amatic SC', cursive;
+$font-basic: 'Oxygen', sans-serif;
+$base-font-size: 14px;
+
+.mainContainer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  min-width: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: $font-basic;
+  font-size: $base-font-size;
+  border: 1px solid red;
+
+  .headerWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 42;
+    display: flex;
+    justify-content: space-between;
+
+    .mainHeader {
+      font-family: $font-header;
+      font-weight: bold;
+      font-size: $base-font-size * 3.5;
+      padding-left: $base-font-size * 2;
+    }
+
+    .headerMenu {
+      padding-right: $base-font-size * 3;
+      padding-top: $base-font-size * 0.5;
+      font-size: $base-font-size * 2;
+      color: $black;
+      display: flex;
+      align-items: center;
+      gap: $base-font-size * 0.25;
+      padding-left: $base-font-size *5;
+      z-index: 42;
+
+      .headerMenu__home {
+        font-family: $font-header;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: $base-font-size * 2;
+        color: $black;
+      }
+    }
+  }
+
+  .mapWrapper {
+    width: 75%;
+    min-height: 100vh;
+    overflow: scroll;
+
+    .mapContainer {
+      background-image: url("http://localhost:3000/image/MAPA.jpg");
+      background-repeat: no-repeat;
+      font-size: $base-font-size * 3;
+      position: relative;
+      background-size: 100%;
+      width: 2000px;
+      height: 1600px;
+      border: 1px solid red;
+    }
+  }
+
+  .placesContainer {
+    background-color: $background;
+    min-width: 256px;
+    width: 25%;
+    vertical-align: top;
+    border: 1px solid blue;
+  }
+}
+
+
+///////////  Places  //////////////
+
+.container__gallery {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow-y: scroll;
+
+  .container__gallery__text {
+    margin: 0;
+    padding-left: $base-font-size*0.5;
+    font-size: $base-font-size * 2;
+    font-family: $font-header;
+    font-weight: bold;
+    color: $white;
+  }
+
+    .gallery__box {
+      display: block;
+      padding: $base-font-size*0.5 $base-font-size*0.5 0 $base-font-size*0.5;
+      margin-right: 0;
+      width: auto;
+      height: 33.3%;
+      font-family: $font-basic;
+
+      .gallery__box__image {
+        height: 100%;
+        width: 100%;
+        border-radius: $base-font-size * 0.6;
+      }
+    }
+}
+
+  .MuiImageListItemBar-title {
+    font-weight: bold;
+    font-family: $font-basic;
+  }
+
+  .MuiImageListItemBar-subtitle {
+    padding-top: $base-font-size * 0.35;
+    font-family: $font-basic;
+    font-size: $base-font-size * 0.75;
+  }
+
+
+
+//////////////  Detail  //////////////
+
+.detail__container {
+  display: block;
+  padding: $base-font-size * 0.5 $base-font-size * 0.5 0 $base-font-size * 0.5;
+  width: auto;
+  height: 100%;
+
+  .detail__info {
+    background-color: $background-white;
+    padding-bottom: $base-font-size * 0.5;
+    border-radius: $base-font-size * 0.6;
+
+    .detail__info__image {
+      border-radius: $base-font-size*0.6 $base-font-size*0.6 0 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .detail__info__text {
+    display: block;
+    padding: $base-font-size*0.5 $base-font-size*0.5 0 $base-font-size*0.5;
+    margin-right: 0;
+    width: auto;
+    height: 30%;
+    text-align: justify;
+    & Link {
+      color: $black;
+    }
+  }
+}
+
+////////////// icon //////////
+
+.icon{
+  color: $black;
+  &:hover {
+    color: $red;
+  }
+
+  &.active {
+    background: $red;
+  }
+
+}
+
+

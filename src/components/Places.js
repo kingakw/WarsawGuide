@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useParams} from "react-router-dom";
 import {getPlaces} from "./data";
-import './places.css'
+import '../App.scss'
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 
@@ -27,7 +27,7 @@ const Places = () =>  {
                             alt={`${name}`}
                             loading="lazy"
                         />
-                        <ImageListItemBar className="gallery__box__text"
+                        <ImageListItemBar
                             title={name}
                             subtitle={shortDescription}
                         />

@@ -6,7 +6,7 @@ import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import BakeryDiningIcon from '@mui/icons-material/BakeryDining';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
 import MenuIcon from '@mui/icons-material/Menu';
-import './App.css';
+import './App.scss';
 
 const App = () => {
     return (

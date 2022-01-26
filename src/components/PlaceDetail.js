@@ -5,9 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Link from '@mui/material/Link';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import {IconButton} from "@mui/material";
-import './detail.css';
-
-
+import '../App.scss';
 
 const PlaceDetail = () => {
     let {placeId} = useParams();
