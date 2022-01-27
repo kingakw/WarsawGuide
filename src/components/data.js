@@ -176,7 +176,7 @@ Kremu bazuje na typowej francuskiej crèmerie, a więc sklepiku z nabiałem i ni
           oprócz stałego menu każdej Charlotte, znajdziecie tu również tradycyjne żydowskie wypieki,
            przekąski i dania, jak gęsie pipki czy placuszki latkes.`,
         facebook: "https://www.facebook.com/charlottemenora/",
-        loc_right: "35%",
+        loc_right: "34.5%",
         loc_top: "36.5%",
     },
     {

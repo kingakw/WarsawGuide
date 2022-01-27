@@ -2,11 +2,11 @@ import React from 'react';
 import {Outlet, Link} from "react-router-dom";
 import Header from "./components/Header"
 import Icons from "./components/Icons"
-import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import BakeryDiningIcon from '@mui/icons-material/BakeryDining';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
-import MenuIcon from '@mui/icons-material/Menu';
+import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import './App.scss';
+
 
 const App = () => {
     return (
@@ -17,11 +17,12 @@ const App = () => {
                     <Header/>
                     <nav className="headerMenu">
                         <Link to="/Places" className="headerMenu__home">HOME</Link> | {" "}
-                        <Link to="/Places/coffee"><FreeBreakfastIcon sx={{fontSize: 40}}
-                                                                     style={{fill: "black"}}/></Link> | {" "}
-                        <Link to="/Places/breakfast"><BakeryDiningIcon sx={{fontSize: 50}}
-                                                                       style={{fill: "black"}}/></Link> | {" "}
-                        <Link to="/Places/food"><DinnerDiningIcon sx={{fontSize: 40}} style={{fill: "black"}}/></Link>
+                        <Link to="/Places/coffee" className="headerMenu__icon"><LocalCafeIcon sx={{fontSize: 38}}/>
+                            <span>coffee</span> </Link> | {" "}
+                        <Link to="/Places/breakfast" className="headerMenu__icon"><BakeryDiningIcon
+                            sx={{fontSize: 40}}/><span> breakfast </span></Link> | {" "}
+                        <Link to="/Places/food" className="headerMenu__icon"><DinnerDiningIcon sx={{fontSize: 40}}/>
+                            <span>food </span> </Link>
                     </nav>
                 </div>
 

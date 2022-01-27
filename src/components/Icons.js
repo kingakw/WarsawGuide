@@ -11,28 +11,24 @@ const Icons = () => {
     let {placeType} = useParams();
     let {placeId} = useParams();
 
-/*    const changeColor = () => {
-        this.classList.add("active");
-        console.log("aaa")
-    }*/
-
-    if (placeType  !== undefined) {
+    if (placeType !== undefined) {
         places = places.filter(({type}) => (type === placeType))
     }
 
-   if (placeId !== undefined) {
-       places = [getPlace(parseInt(placeId))]
+    if (placeId !== undefined) {
+        places = [getPlace(parseInt(placeId))]
     }
 
 
     return (
         <div>
             {places.map(({id, name, direction, loc_right, loc_top}) => (
-                <Tooltip title={ <h2><>{name}: {direction}</></h2> }
+                <Tooltip title={<h2><>{name}: {direction}</>
+                </h2>}
                          key={id}
                          style={{position: `absolute`, zIndex: 40, left: `${loc_right}`, top: `${loc_top}`}}>
-                    <NavLink to={`/Detail/${id}`} key={id} >
-                        <LocationOnIcon className="icon" sx={{fontSize: 40}} />
+                    <NavLink to={`/Detail/${id}`} key={id}>
+                        <LocationOnIcon className="icon" sx={{fontSize: 50}}/>
                     </NavLink>
                 </Tooltip>
             ))
@@ -42,6 +38,3 @@ const Icons = () => {
 }
 
 export default Icons;
-
-/*
-onClick={changeColor} */
