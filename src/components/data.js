@@ -13,11 +13,9 @@ let places = [
             czy Sławek Saran, Mistrz Polski Brewers Cup 2016, macie pewność, że dostaniecie kawę idealną.
              Na półkach znajdziecie m. in. ziarna z polskiego Coffeelab i najlepszych zagranicznych palarni 
              – Koppi, Good Life Coffee, The Barn, Five Elepthant czy Drop Coffee.
-             Możemy tu spróbować również takich napojów jak np. kombucha, czyli fermentowana herbata 
-             albo cold brew tepache – fermentowany napój z ananasa z kawą macerowaną na zimno. 
+             Możemy tu spróbować również takich napojów jak np. kombucha, czyli fermentowana herbata. 
              W tygodniu można już od 7.30 zacząć tu dzień śniadaniem zamawiając np. tost z ricottą własnej roboty,
-              fenkułem, porzeczką i miętą, tost z pieczoną brzoskwinią, mozzarellą oraz polskim prosciutto
-               albo tost z jajkiem z czipsami z szałwii i płatkami chilli.`,
+              fenkułem, porzeczką i miętą.`,
         facebook: "https://www.facebook.com/forumcoffee/",
         loc_right: "29%",
         loc_top: "22.5%",
@@ -93,7 +91,7 @@ let places = [
         type: "coffee",
         shortDescription: "Ministerstwo Kawy to kawa specialty z pysznymi wypiekami.",
         direction: "Marszałkowska 27/35",
-        image: "/image/coffee/ministerstwo.png",
+        image: "/image/coffee/ministerstwo.jpg",
         description: `W tym Ministerstwie niepodzielną władzę dzierżą bariści, którzy codziennie szczodrze przelewają 
         dla przybyłych hektolitry świetnej kawy z uznanych palarni. Aeropress, drip, chemex i kalita, a może po prostu
          espresso, americano czy latte? Wszystkie wasze ulubione metody i rodzaje oraz dopasowane do nich ziarna,
@@ -153,7 +151,7 @@ Kremu bazuje na typowej francuskiej crèmerie, a więc sklepiku z nabiałem i ni
         type: "breakfast",
         shortDescription: "Chleb i wino.",
         direction: "Plac Zbawiciela",
-        image: "/image/breakfast/charlotte.png",
+        image: "/image/breakfast/charlotte.jpg",
         description: `Charlotte to prawdziwa boulangerie. Piekarze, wykorzystując własny zakwas 
         i stosując tylko naturalne składniki, pieką chleb w nocy, aby od rana był dostępny dla klientów. 
         W menu tartines przygotowywane na tutejszym chlebie, croissanty z czekoladami i konfiturami Charlotte,
