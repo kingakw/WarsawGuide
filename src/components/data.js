@@ -35,7 +35,7 @@ let places = [
             `Kawa w ogródku kawiarnianym z widokiem na pędzące tramwaje i uroczy plac Zbawiciela to "must do" pobytu w Warszawie.` +
             ' Specjalnością Coffee Karma jest świeżo palona kawa z wyselekcjonowanych krajów świata, wypalana w pięknym  piecu Probat L5, wyekponowanym w centralnym miejscu kawiarni.' +
             ' Życie kawiarniane Karmy jest mocno związane z kulturą. Każdego miesiąca prezentuje się tu pracę różnorodnych artystów. ' +
-            'Są to zarówno koncerty, jak i wieczory poetyckie i wernisaże',
+            'Są to zarówno koncerty, jak i wieczory poetyckie i wernisaże.',
         facebook: "https://www.facebook.com/coffeekarma.warszawa/",
         loc_right: "52%",
         loc_top: "81%",
@@ -67,8 +67,7 @@ let places = [
          widać, że wystrój sprzyja relaksowi, rozmyślaniu i posiadywaniu. Przestrzeń jest niewielka,
           lecz jakimś cudem odprężająco intymna. Są tu dostępne i alternatywy, i doprawdy solidne espresso.
            A jak wiadomo, skoro espresso na najwyższą notę, to nie zawiedzie też americano i nawet spod spienionego
-            mleka latte wyczuje się przyzwoitą kawową nutę. Jeśli po dawce kofeiny przydybie was głód,
-             koniecznie spróbujcie świeżego pieczywa z pasztetami od Podróbki.`,
+            mleka latte wyczuje się przyzwoitą kawową nutę.`,
         facebook: "https://www.facebook.com/storcafe/",
         loc_right: "62.5%",
         loc_top: "34%",
@@ -201,12 +200,10 @@ Kremu bazuje na typowej francuskiej crèmerie, a więc sklepiku z nabiałem i ni
         shortDescription: `Kawa i śniadanie w najbardziej urokliwym miejscu: na Placu Zbawiciela`,
         direction: "Mokotowska 17",
         image: "/image/coffee/karma.jpg",
-        description: 'Coffee Karma powstała w 2002 roku. To pierwsza w Warszawie kawiarnia która może się pochwalić wypalaną na miejscu, świeżą kawą. ' +
-            'Znajduje się w jednym z najbardziej urokliwych, a jednocześnie kultowych miejsc na mapie stolicy: na Placu Zbawiciela. ' +
-            `Kawa w ogródku kawiarnianym z widokiem na pędzące tramwaje i uroczy plac Zbawiciela to "must do" pobytu w Warszawie` +
-            ' Specjalnością Coffee Karma jest świeżo palona kawa z wyselekcjonowanych krajów świata, wypalana w pięknym  piecu Probat L5, wyekponowanym w centralnym miejscu kawiarni' +
-            ' Życie kawiarniane Karmy jest mocno związane z kulturą. Każdego miesiąca prezentuje się tu pracę różnorodnych artystów. ' +
-            'Są to zarówno koncerty, jak i wieczory poetyckie i wernisaże',
+        description: 'Coffee Karma znajduje się w jednym z najbardziej urokliwych, a jednocześnie kultowych miejsc na mapie stolicy: na Placu Zbawiciela. ' +
+            `Kawa w ogródku kawiarnianym z widokiem na pędzące tramwaje i uroczy plac Zbawiciela to "must do" pobytu w Warszawie.` +
+            ' Specjalnością Coffee Karma jest świeżo palona kawa z wyselekcjonowanych krajów świata, wypalana w pięknym  piecu Probat L5, wyekponowanym w centralnym miejscu kawiarni.' +
+          `Możecie tu jest też dobre śniadanie, kanapki, sałatki lub napić się autorskich smoothies`,
         facebook: "https://www.facebook.com/coffeekarma.warszawa/",
         loc_right: "52%",
         loc_top: "81%",
