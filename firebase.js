@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
+    apiKey: "AIzaSyC-IsCsNXXy-GC1XGZmeiH1eWuGoDZ3NfU",
     authDomain: "subjective-warsaw-food-guide.firebaseapp.com",
     projectId: "subjective-warsaw-food-guide",
     storageBucket: "subjective-warsaw-food-guide.appspot.com",
