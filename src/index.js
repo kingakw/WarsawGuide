@@ -19,13 +19,14 @@ render(
         <Routes>
 
             <Route path="/" element={<Navigate replace to="/Places" />} />
-            <Route path="/" element={<App/>}>
 
+            <Route path="/" element={<App/>}>
                 <Route path="Detail/:placeId" element={<PlaceDetail />} />
                 <Route path="Places" element={<Places/>}>
                     <Route path=":placeType" element={<Places/>}/>
                 </Route>
             </Route>
+
         </Routes>
     </BrowserRouter>,
     rootElement
