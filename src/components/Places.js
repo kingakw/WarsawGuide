@@ -17,6 +17,9 @@ const Places = () => {
     return (
         <div className="container__gallery">
             <p className="container__gallery__text"> {placeType} places: </p>
+           {/* <form onSubmit={handleSubmit}>
+                <input type="text" id="input" value={spot} onChange={updateLocation}/>
+            </form>*/}
             {places
                 .map(({image, name, shortDescription, id}) => (
                     <NavLink className="container__gallery__box" to={`/Detail/${id}`} key={id}>

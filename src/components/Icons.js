@@ -28,7 +28,7 @@ const Icons = () => {
                          key={id}
                          style={{position: `absolute`, zIndex: 40, left: `${loc_right}`, top: `${loc_top}`}}>
                     <NavLink to={`/Detail/${id}`} key={id}>
-                        <LocationOnIcon className="icon" sx={{fontSize: 50}}/>
+                        <LocationOnIcon className="icon" sx={{fontSize: 60}}/>
                     </NavLink>
                 </Tooltip>
             ))
