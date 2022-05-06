@@ -29,11 +29,12 @@ const App = () => {
 
                 <div className="mapWrapper">
 
-                    <PanZoom maxZoom={1.5}
-                             minZoom={0.4}
-                             initialPositionX={200}
-                             initialPositionY={100}
-
+                    <PanZoom
+                        maxZoom={1.3}
+                        minZoom={0.75}
+                        boundaryRatioVertical={0.5}
+                        boundaryRatioHorizontal={0.5}
+                        enableBoundingBox
                     >
                         <div className="mapContainer">
                             <Icons/>
