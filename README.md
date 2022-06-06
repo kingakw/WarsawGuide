@@ -6,12 +6,12 @@ More details can be found after clicking on place name.
 Enjoy.
 
 # ▶️ DEMO
-For demo click below:
+For demo click here:
 https://subjective-warsaw-food-guide.web.app
 
 ![BooksScreen](public/sample.png)
 
-# Technologies used
+# 📓 Technologies used
 * React.js with Hooks,
 * React Router Dom;
 * React Easy Panzoom;
