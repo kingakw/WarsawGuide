@@ -1,5 +1,5 @@
 # 🗺️ DESCRIPTION
-Very subjective guide (that are my recommendations for cozy places) to recommended coffees, breakfast places and restaurants in Warsaw.
+Very subjective guide (my personal recommendations for cozy places) to recommended coffees, breakfast places and restaurants in Warsaw.
 Places can be searched on a map or on a slider. Map can be paned and zoomed.
 You can sort places by type (coffees, breakfast,restaurants) by clicking on top menu. 
 More details can be found after clicking on place name.
