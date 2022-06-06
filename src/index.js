@@ -12,16 +12,15 @@ import PlaceDetail from "./components/PlaceDetail";
 import App from './App';
 
 
-
 const rootElement = document.getElementById("root");
 render(
     <BrowserRouter>
         <Routes>
 
-            <Route path="/" element={<Navigate replace to="/Places" />} />
+            <Route path="/" element={<Navigate replace to="/Places"/>}/>
 
             <Route path="/" element={<App/>}>
-                <Route path="Detail/:placeId" element={<PlaceDetail />} />
+                <Route path="Detail/:placeId" element={<PlaceDetail/>}/>
                 <Route path="Places" element={<Places/>}>
                     <Route path=":placeType" element={<Places/>}/>
                 </Route>

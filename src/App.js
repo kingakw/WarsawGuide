@@ -6,6 +6,7 @@ import BakeryDiningIcon from '@mui/icons-material/BakeryDining';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import './App.scss';
+import {PanZoom} from 'react-easy-panzoom';
 
 
 const App = () => {
@@ -27,9 +28,19 @@ const App = () => {
                 </div>
 
                 <div className="mapWrapper">
-                    <div className="mapContainer">
-                        <Icons/>
-                    </div>
+
+                    <PanZoom
+                        maxZoom={1.3}
+                        minZoom={0.75}
+                        boundaryRatioVertical={0.5}
+                        boundaryRatioHorizontal={0.5}
+                        enableBoundingBox
+                    >
+                        <div className="mapContainer">
+                            <Icons/>
+                        </div>
+                    </PanZoom>
+
                 </div>
 
                 <div className="placesContainer"><Outlet/></div>
