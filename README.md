@@ -7,7 +7,7 @@ Enjoy.
 
 # ▶️ DEMO
 For demo click here:
-https://subjective-warsaw-food-guide.web.app
+https://warsawfoodguide-17ee8.web.app
 
 ![BooksScreen](public/sample.png)
 
